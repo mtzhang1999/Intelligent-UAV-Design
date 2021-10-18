@@ -7,7 +7,9 @@ from sensor_msgs.msg import Image
 from cv_bridge import CvBridge,CvBridgeError
 import numpy as np
 import commands
+
 root = "/path/to/your/python_data"
+
 def callback(data):
     bridge = CvBridge()
     cv_image = bridge.imgmsg_to_cv2(data, "bgr8")
