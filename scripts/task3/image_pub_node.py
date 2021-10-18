@@ -8,7 +8,9 @@ import numpy as np
 from sensor_msgs.msg import Image
 import random
 from cv_bridge import CvBridge, CvBridgeError
+
 root = "/path/to/your/python_data"
+
 def pubImage():
     rospy.init_node('pubImage', anonymous = True)
     pub = rospy.Publisher('ShowImage', Image, queue_size = 10)
